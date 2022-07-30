@@ -1,0 +1,8 @@
+
+.segment button:first-child {
+    margin-left: 0;
+}
+
+.segment button:nth-child(2) {
+    margin-left: 10px;
+}

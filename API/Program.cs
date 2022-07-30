@@ -11,8 +11,6 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<DataContext>(opt => opt.UseSqlite(builder.Configuration.GetConnectionString("Default")));
-
 var startup = new Startup(builder.Configuration);
 
 // Manually call ConfigureServices()
